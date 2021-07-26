@@ -1,0 +1,7 @@
+GIT:
+git add --all && git commit -m "MY COMMIT MESSAGE" && git push
+
+git add --all && git commit -m "Easy and Medium stretch goals" && git push
+
+START:
+firebase emulators:start --only hosting
