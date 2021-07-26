@@ -8,14 +8,12 @@ const signIn = async () => {
         const res = await firebase.auth().signInWithPopup(provider);
         const user = res.user;
         console.log('login success', user);
+        window.location = "writeNote.html"
 
         // firebase.auth.signInWithPopup(provider).then(result => {
         // const user = result.user
         // console.log('login success', user)
         // })
-
-        // window.location = "writeNote.html"
-
     } catch (err) {
         console.error('login failed', err);
     }
